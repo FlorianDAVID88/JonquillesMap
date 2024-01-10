@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7137ABD2B3068DE000B9F9C /* ButtonToPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137ABC2B3068DE000B9F9C /* ButtonToPlaceView.swift */; };
+		E7137ABF2B30B4DD000B9F9C /* ButtonDeleteToPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137ABE2B30B4DD000B9F9C /* ButtonDeleteToPlaceView.swift */; };
+		E7137AC62B32EB6B000B9F9C /* InfoMapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137AC52B32EB6B000B9F9C /* InfoMapButton.swift */; };
+		E7137AC82B32FCCB000B9F9C /* ButtonAddToPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137AC72B32FCCB000B9F9C /* ButtonAddToPlaceView.swift */; };
 		E71F40FC2B29FAAE0029F5E7 /* JonquillesMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F40FB2B29FAAE0029F5E7 /* JonquillesMapApp.swift */; };
 		E71F40FE2B29FAAE0029F5E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F40FD2B29FAAE0029F5E7 /* ContentView.swift */; };
 		E71F41002B29FAB00029F5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71F40FF2B29FAB00029F5E7 /* Assets.xcassets */; };
 		E71F41032B29FAB00029F5E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71F41022B29FAB00029F5E7 /* Preview Assets.xcassets */; };
 		E71F41172B29FD7C0029F5E7 /* MarkerMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F41102B29FD7B0029F5E7 /* MarkerMapView.swift */; };
-		E71F41192B29FD7C0029F5E7 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F41122B29FD7C0029F5E7 /* TestView.swift */; };
 		E71F411A2B29FD7C0029F5E7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F41132B29FD7C0029F5E7 /* HomeView.swift */; };
 		E71F411C2B29FD7C0029F5E7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F41152B29FD7C0029F5E7 /* MapView.swift */; };
 		E71F411F2B29FD9F0029F5E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F411D2B29FD9F0029F5E7 /* User.swift */; };
@@ -27,9 +30,19 @@
 		E71F41332B29FE5F0029F5E7 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F41312B29FE5F0029F5E7 /* UserViewModel.swift */; };
 		E71F41362B29FFF10029F5E7 /* Jonquilles_PersonalUseOnly.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E71F41342B29FFF10029F5E7 /* Jonquilles_PersonalUseOnly.ttf */; };
 		E71F41372B29FFF10029F5E7 /* Fleurs de Liane.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E71F41352B29FFF10029F5E7 /* Fleurs de Liane.TTF */; };
+		E7308D0C2B2A063D001BCCD9 /* SliderSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7308D0B2B2A063D001BCCD9 /* SliderSignView.swift */; };
+		E7308D0E2B2A0649001BCCD9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7308D0D2B2A0649001BCCD9 /* SignInView.swift */; };
+		E7308D102B2A0655001BCCD9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7308D0F2B2A0655001BCCD9 /* SignUpView.swift */; };
+		E7308D132B2A3908001BCCD9 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7308D122B2A3908001BCCD9 /* ViewModifiers.swift */; };
+		E7C3A2A22B4DE3740049FD49 /* ButtonsActionPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3A2A12B4DE3740049FD49 /* ButtonsActionPlaceView.swift */; };
+		E7C3A2A52B4E1A0B0049FD49 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3A2A42B4E1A0A0049FD49 /* StarRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7137ABC2B3068DE000B9F9C /* ButtonToPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonToPlaceView.swift; sourceTree = "<group>"; };
+		E7137ABE2B30B4DD000B9F9C /* ButtonDeleteToPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDeleteToPlaceView.swift; sourceTree = "<group>"; };
+		E7137AC52B32EB6B000B9F9C /* InfoMapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMapButton.swift; sourceTree = "<group>"; };
+		E7137AC72B32FCCB000B9F9C /* ButtonAddToPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAddToPlaceView.swift; sourceTree = "<group>"; };
 		E71F40F82B29FAAE0029F5E7 /* JonquillesMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JonquillesMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71F40FB2B29FAAE0029F5E7 /* JonquillesMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JonquillesMapApp.swift; sourceTree = "<group>"; };
 		E71F40FD2B29FAAE0029F5E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,7 +50,6 @@
 		E71F41022B29FAB00029F5E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E71F41092B29FCF20029F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E71F41102B29FD7B0029F5E7 /* MarkerMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerMapView.swift; sourceTree = "<group>"; };
-		E71F41122B29FD7C0029F5E7 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		E71F41132B29FD7C0029F5E7 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E71F41152B29FD7C0029F5E7 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E71F411D2B29FD9F0029F5E7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -52,6 +64,12 @@
 		E71F41312B29FE5F0029F5E7 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		E71F41342B29FFF10029F5E7 /* Jonquilles_PersonalUseOnly.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jonquilles_PersonalUseOnly.ttf; sourceTree = "<group>"; };
 		E71F41352B29FFF10029F5E7 /* Fleurs de Liane.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fleurs de Liane.TTF"; sourceTree = "<group>"; };
+		E7308D0B2B2A063D001BCCD9 /* SliderSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSignView.swift; sourceTree = "<group>"; };
+		E7308D0D2B2A0649001BCCD9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E7308D0F2B2A0655001BCCD9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E7308D122B2A3908001BCCD9 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		E7C3A2A12B4DE3740049FD49 /* ButtonsActionPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsActionPlaceView.swift; sourceTree = "<group>"; };
+		E7C3A2A42B4E1A0A0049FD49 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +130,6 @@
 				E71F41262B29FE070029F5E7 /* Places */,
 				E71F41212B29FDE20029F5E7 /* Users */,
 				E71F41132B29FD7C0029F5E7 /* HomeView.swift */,
-				E71F41122B29FD7C0029F5E7 /* TestView.swift */,
 				E71F40FD2B29FAAE0029F5E7 /* ContentView.swift */,
 			);
 			path = Views;
@@ -151,6 +168,7 @@
 			children = (
 				E71F41352B29FFF10029F5E7 /* Fleurs de Liane.TTF */,
 				E71F41342B29FFF10029F5E7 /* Jonquilles_PersonalUseOnly.ttf */,
+				E7308D122B2A3908001BCCD9 /* ViewModifiers.swift */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -158,6 +176,7 @@
 		E71F41212B29FDE20029F5E7 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				E7308D112B2A0664001BCCD9 /* Sign */,
 				E71F41222B29FDF80029F5E7 /* ListUsersView.swift */,
 				E71F41232B29FDF80029F5E7 /* UserProfileView.swift */,
 			);
@@ -167,7 +186,9 @@
 		E71F41262B29FE070029F5E7 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				E7C3A2A32B4E18340049FD49 /* ButtonsAction */,
 				E71F41282B29FE260029F5E7 /* PlaceDetailView.swift */,
+				E7C3A2A42B4E1A0A0049FD49 /* StarRatingView.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -177,8 +198,30 @@
 			children = (
 				E71F41152B29FD7C0029F5E7 /* MapView.swift */,
 				E71F41102B29FD7B0029F5E7 /* MarkerMapView.swift */,
+				E7137AC52B32EB6B000B9F9C /* InfoMapButton.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		E7308D112B2A0664001BCCD9 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				E7308D0B2B2A063D001BCCD9 /* SliderSignView.swift */,
+				E7308D0D2B2A0649001BCCD9 /* SignInView.swift */,
+				E7308D0F2B2A0655001BCCD9 /* SignUpView.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		E7C3A2A32B4E18340049FD49 /* ButtonsAction */ = {
+			isa = PBXGroup;
+			children = (
+				E7137ABC2B3068DE000B9F9C /* ButtonToPlaceView.swift */,
+				E7137ABE2B30B4DD000B9F9C /* ButtonDeleteToPlaceView.swift */,
+				E7137AC72B32FCCB000B9F9C /* ButtonAddToPlaceView.swift */,
+				E7C3A2A12B4DE3740049FD49 /* ButtonsActionPlaceView.swift */,
+			);
+			path = ButtonsAction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,10 +296,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7308D0E2B2A0649001BCCD9 /* SignInView.swift in Sources */,
+				E7137ABD2B3068DE000B9F9C /* ButtonToPlaceView.swift in Sources */,
+				E7137AC62B32EB6B000B9F9C /* InfoMapButton.swift in Sources */,
+				E7137ABF2B30B4DD000B9F9C /* ButtonDeleteToPlaceView.swift in Sources */,
+				E7308D0C2B2A063D001BCCD9 /* SliderSignView.swift in Sources */,
+				E7C3A2A52B4E1A0B0049FD49 /* StarRatingView.swift in Sources */,
 				E71F412F2B29FE4A0029F5E7 /* UserService.swift in Sources */,
 				E71F41322B29FE5F0029F5E7 /* PlaceViewModel.swift in Sources */,
 				E71F412D2B29FE4A0029F5E7 /* APIData.swift in Sources */,
-				E71F41192B29FD7C0029F5E7 /* TestView.swift in Sources */,
+				E7308D102B2A0655001BCCD9 /* SignUpView.swift in Sources */,
+				E7C3A2A22B4DE3740049FD49 /* ButtonsActionPlaceView.swift in Sources */,
 				E71F411C2B29FD7C0029F5E7 /* MapView.swift in Sources */,
 				E71F40FE2B29FAAE0029F5E7 /* ContentView.swift in Sources */,
 				E71F412E2B29FE4A0029F5E7 /* PlaceService.swift in Sources */,
@@ -265,8 +315,10 @@
 				E71F41332B29FE5F0029F5E7 /* UserViewModel.swift in Sources */,
 				E71F41252B29FDF80029F5E7 /* UserProfileView.swift in Sources */,
 				E71F411A2B29FD7C0029F5E7 /* HomeView.swift in Sources */,
+				E7308D132B2A3908001BCCD9 /* ViewModifiers.swift in Sources */,
 				E71F41292B29FE260029F5E7 /* PlaceDetailView.swift in Sources */,
 				E71F40FC2B29FAAE0029F5E7 /* JonquillesMapApp.swift in Sources */,
+				E7137AC82B32FCCB000B9F9C /* ButtonAddToPlaceView.swift in Sources */,
 				E71F41242B29FDF80029F5E7 /* ListUsersView.swift in Sources */,
 				E71F411F2B29FD9F0029F5E7 /* User.swift in Sources */,
 			);

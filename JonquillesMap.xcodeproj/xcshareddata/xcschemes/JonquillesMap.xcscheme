@@ -52,7 +52,7 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "URL_API"
-            value = "http://localhost:3000"
+            value = "http://90.48.97.133:8000"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
