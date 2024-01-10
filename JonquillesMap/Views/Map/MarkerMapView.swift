@@ -8,9 +8,8 @@
 import SwiftUI
 import MapKit
 
-struct MarkerMapView: View {
+struct MarkerView: View {
     @State var place: Place
-    @State private var isSheet = false
     
     var body: some View {
         ZStack {
@@ -21,13 +20,7 @@ struct MarkerMapView: View {
             
             Image(systemName: getMarkerImageName())
         }
-        .onTapGesture {
-            isSheet.toggle()
-        }
         .foregroundColor(.white)
-        .sheet(isPresented: $isSheet) {
-            PlaceDetailView(place: place, appear: $isSheet)
-        }
     }
     
     func getColor() -> Color {
@@ -46,6 +39,21 @@ struct MarkerMapView: View {
             case .hotel: return "house"
             case .activity: return "list.clipboard"
         }
+    }
+}
+
+struct MarkerMapView: View {
+    @State var place: Place
+    @State private var isSheet = false
+    
+    var body: some View {
+        MarkerView(place: place)
+            .onTapGesture {
+                isSheet.toggle()
+            }
+            .sheet(isPresented: $isSheet) {
+                PlaceDetailView(place: place, appear: $isSheet)
+            }
     }
 }
 

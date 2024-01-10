@@ -11,6 +11,7 @@ struct UserProfileView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var userVM: UserViewModel
     @State var user: User
+    @State private var placeUser: Place? = nil
     @State private var alertDisconnect = false
     
     var body: some View {
@@ -31,12 +32,28 @@ struct UserProfileView: View {
                 .font(.system(size: 36))
                 .bold()
             
-            HStack {
-                Text("Adresse e-mail")
-                Spacer()
-                Text(user.email)
+            List {
+                HStack {
+                    Text("Adresse e-mail")
+                    Spacer()
+                    Text(user.email)
+                }
+                
+                if let placeUser = placeUser {
+                    HStack {
+                        Text("Endroit actuel")
+                        Spacer()
+                        MarkerView(place: placeUser)
+                        Text(placeUser.name)
+                    }
+                }
             }
-            .padding(.horizontal)
+            .listStyle(.plain)
+            .task {
+                if let curUser = userVM.currentUser {
+                    placeUser = await userVM.getPlaceUserPresent(id_user: curUser.id)
+                }
+            }
             
             Spacer()
             

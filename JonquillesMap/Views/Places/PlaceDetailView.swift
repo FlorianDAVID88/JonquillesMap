@@ -36,7 +36,7 @@ struct PlaceDetailView: View {
                 }
                 
                 HStack {
-                    MarkerMapView(place: place)
+                    MarkerView(place: place)
                         .frame(height: 30)
                     Text(place.description)
                 }
@@ -97,7 +97,7 @@ struct PlaceDetailView: View {
             )
             .navigationBarTitle(Text(place.name), displayMode: .inline)
             .task {
-                await viewModel.getUsersInPlace(id: 4)
+                await viewModel.getUsersInPlace(id: place.id)
             }
         }
     }
