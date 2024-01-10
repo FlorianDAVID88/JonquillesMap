@@ -40,7 +40,8 @@ struct ButtonDeleteToPlaceView: View {
                 .onChange(of: change) {
                     Task.init {
                         if change {
-                            await userVM.deleteUserPlace(id_user: curUser.id, id_place: place.id)
+                            await userVM.deleteUserPlace(id_user: curUser.id)
+                            await userVM.getUsersInPlace(id: place.id)
                         }
                     }
                 }

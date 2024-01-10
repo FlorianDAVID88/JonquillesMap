@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct UserProfileView: View {
-    @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var userVM: UserViewModel
+    @StateObject var placeVM = PlaceViewModel()
     @State var user: User
     @State private var placeUser: Place? = nil
-    @State private var alertDisconnect = false
     
     var body: some View {
         VStack(spacing: 20) {
@@ -39,6 +38,12 @@ struct UserProfileView: View {
                     Text(user.email)
                 }
                 
+                HStack {
+                    Text("N° de téléphone")
+                    Spacer()
+                    Text(user.phone)
+                }
+                
                 if let placeUser = placeUser {
                     HStack {
                         Text("Endroit actuel")
@@ -50,36 +55,15 @@ struct UserProfileView: View {
             }
             .listStyle(.plain)
             .task {
-                if let curUser = userVM.currentUser {
-                    placeUser = await userVM.getPlaceUserPresent(id_user: curUser.id)
-                }
+                placeUser = await placeVM.getPlaceUserPresent(id_user: user.id)
             }
             
             Spacer()
             
             if user.id == userVM.currentUser?.id {
-                Button {
-                    alertDisconnect.toggle()
-                } label: {
-                    Text("Se déconnecter")
-                        .padding()
-                        .background(Color.accentColor)
-                        .cornerRadius(10)
-                        .foregroundColor(.white)
-                }
-                .alert(isPresented: $alertDisconnect) {
-                    Alert(
-                        title: Text("Êtes-vous sûr de vouloir vous déconnecter"),
-                        primaryButton: .default(Text("Non"), action: {
-                            alertDisconnect = false
-                        }),
-                        secondaryButton: .cancel(Text("Oui"), action: {
-                            userVM.disconnect()
-                            if userVM.currentUser == nil {
-                                self.presentationMode.wrappedValue.dismiss()
-                            }
-                        })
-                    )
+                HStack {
+                    ButtonDisconnectView()
+                    ButtonDeleteAccount()
                 }
             }
         }

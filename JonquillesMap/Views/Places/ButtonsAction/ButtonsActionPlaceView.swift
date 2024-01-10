@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ButtonsActionPlaceView: View {
     @EnvironmentObject var userVM: UserViewModel
+    @StateObject var placeVM = PlaceViewModel()
     @State var place: Place
     @State var users: [User]
     @State private var placeUser: Place? = nil
@@ -26,7 +27,7 @@ struct ButtonsActionPlaceView: View {
                     }
                 }
                 .task {
-                    placeUser = await userVM.getPlaceUserPresent(id_user: currentUser.id)
+                    placeUser = await placeVM.getPlaceUserPresent(id_user: currentUser.id)
                 }
             }
         }

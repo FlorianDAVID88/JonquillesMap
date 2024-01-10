@@ -19,6 +19,9 @@ class PlaceViewModel: ObservableObject {
     @Published var state: PlaceState = .notAvailable
     private let service = PlaceService()
     
+    /**
+     * Retourne tous les endroits qui seront utilisés dans la Map
+     */
     func getAllPlaces() async {
         state = .loading
         do {
@@ -27,6 +30,19 @@ class PlaceViewModel: ObservableObject {
         } catch {
             state = .error(error: error)
             print(error)
+        }
+    }
+    
+    /**
+     * Récupère l'endroit où se situe un certain utilisateur via l'API
+     * @param id_user l'id de l'utilisateur
+     * @return Place? l'endroit où se situe l'utilisateur (s'il y en a un)
+     */
+    func getPlaceUserPresent(id_user: Int) async -> Place? {
+        do {
+            return try await service.placeUserPresent(id_user: id_user)
+        } catch {
+            return nil
         }
     }
 }
