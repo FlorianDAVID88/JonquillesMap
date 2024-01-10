@@ -1,15 +1,17 @@
 //
 //  ContentView.swift
-//  MingleMap
+//  JonquillesMap
 //
 //  Created by Florian DAVID on 30/11/2023.
 //
 
 import SwiftUI
 import MapKit
-//https://www.fete-des-jonquilles-gerardmer-officiel.fr
+
 struct ContentView: View {
+    @EnvironmentObject var userVM: UserViewModel
     @State private var tabTitle = "Home"
+    @State private var sheetConnect = false
     
     var body: some View {
         NavigationView {
@@ -18,9 +20,9 @@ struct ContentView: View {
                     HomeView()
                         .tabItem {
                             Image(systemName: "house.fill")
-                            Text("Home")
+                            Text("Accueil")
                         }
-                        .tag("Home")
+                        .tag("Accueil")
                     
                     MapView()
                         .tabItem {
@@ -31,15 +33,34 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle(Text(tabTitle), displayMode: .inline)
-            .navigationBarItems(trailing:
-                NavigationLink(destination: UserProfileView(user: User())) {
-                    Image(systemName: "person.circle.fill")
-                }
+            .navigationBarItems(
+                leading:
+                    Group {
+                        if tabTitle == "Map" { InfoMapButton() }
+                    },
+                trailing:
+                    Group {
+                        if let user = userVM.currentUser {
+                            NavigationLink(destination: UserProfileView(user: user)) {
+                                Image(systemName: "person.circle.fill")
+                            }
+                        } else {
+                            Button {
+                                sheetConnect.toggle()
+                            } label: {
+                                Image(systemName: "person.circle.fill")
+                            }
+                        }
+                    }
             )
+            .sheet(isPresented: $sheetConnect) {
+                SliderSignView(isShowingMenu: $sheetConnect)
+            }
         }
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(UserViewModel())
 }
