@@ -36,6 +36,8 @@
 		E7308D132B2A3908001BCCD9 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7308D122B2A3908001BCCD9 /* ViewModifiers.swift */; };
 		E7C3A2A22B4DE3740049FD49 /* ButtonsActionPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3A2A12B4DE3740049FD49 /* ButtonsActionPlaceView.swift */; };
 		E7C3A2A52B4E1A0B0049FD49 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3A2A42B4E1A0A0049FD49 /* StarRatingView.swift */; };
+		E7C3A2A72B4E3E0D0049FD49 /* ButtonDisconnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3A2A62B4E3E0D0049FD49 /* ButtonDisconnectView.swift */; };
+		E7C3A2A92B4E3E510049FD49 /* ButtonDeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3A2A82B4E3E510049FD49 /* ButtonDeleteAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		E7308D122B2A3908001BCCD9 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		E7C3A2A12B4DE3740049FD49 /* ButtonsActionPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsActionPlaceView.swift; sourceTree = "<group>"; };
 		E7C3A2A42B4E1A0A0049FD49 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		E7C3A2A62B4E3E0D0049FD49 /* ButtonDisconnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDisconnectView.swift; sourceTree = "<group>"; };
+		E7C3A2A82B4E3E510049FD49 /* ButtonDeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDeleteAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 				E7308D112B2A0664001BCCD9 /* Sign */,
 				E71F41222B29FDF80029F5E7 /* ListUsersView.swift */,
 				E71F41232B29FDF80029F5E7 /* UserProfileView.swift */,
+				E7C3A2A62B4E3E0D0049FD49 /* ButtonDisconnectView.swift */,
+				E7C3A2A82B4E3E510049FD49 /* ButtonDeleteAccount.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -302,8 +308,10 @@
 				E7137ABF2B30B4DD000B9F9C /* ButtonDeleteToPlaceView.swift in Sources */,
 				E7308D0C2B2A063D001BCCD9 /* SliderSignView.swift in Sources */,
 				E7C3A2A52B4E1A0B0049FD49 /* StarRatingView.swift in Sources */,
+				E7C3A2A92B4E3E510049FD49 /* ButtonDeleteAccount.swift in Sources */,
 				E71F412F2B29FE4A0029F5E7 /* UserService.swift in Sources */,
 				E71F41322B29FE5F0029F5E7 /* PlaceViewModel.swift in Sources */,
+				E7C3A2A72B4E3E0D0049FD49 /* ButtonDisconnectView.swift in Sources */,
 				E71F412D2B29FE4A0029F5E7 /* APIData.swift in Sources */,
 				E7308D102B2A0655001BCCD9 /* SignUpView.swift in Sources */,
 				E7C3A2A22B4DE3740049FD49 /* ButtonsActionPlaceView.swift in Sources */,
