@@ -11,6 +11,7 @@ Application iOS sur l'idée de la fête des jonquilles à Gérardmer ([site offi
 |                            Page d'accueil                            |                                   Map                                   |                               Page de profil                                |
 |:--------------------------------------------------------------------:|:-----------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
 | <img src="./Screenshots/Home.png" width="150" alt="" align="center"> | <img src="./Screenshots/MapView.png" width="150" alt="" align="center"> | <img src="./Screenshots/ProfileView.png" width="150" alt="" align="center"> |
+
 La page de profil est accessible en cliquant sur le bouton en haut à droite de la page d'accueil.
 On y trouve également un petit bouton d'information en haut à gauche lorsqu'on est sur la map. Il renvoie une fenêtre d'alerte pour proposer de voir le [plan du festival](https://www.fete-des-jonquilles-gerardmer-officiel.fr/wp-content/uploads/2022/08/220804-Base-vierge-plan-corso-6.png) :
 
@@ -24,6 +25,7 @@ Lorsqu'on clique sur un des marqueurs de la map, on arrive sur une page secondai
 |                                                                   Vue du lieu et des utilisateurs présents                                                                   |     Profil d'utilisateur      |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------:|
 | <img src="./Screenshots/PlaceDetailWithUser.png" width="150" alt="" align="center"> <img src="./Screenshots/PlaceDetailWithOtherUser.png" width="150" alt="" align="center"> | <img src="./Screenshots/OtherProfileView.png" width="150" alt="" align="center"> |
+
 On peut également cliquer sur le bouton en haut à droite de la vue du lieu pour accéder au site internet du lieu (s'il existe) :
 
 |                                   Site internet du lieu                                    |
