@@ -1,6 +1,6 @@
 //
 //  PlaceViewModel.swift
-//  MingleMap
+//  JonquillesMap
 //
 //  Created by Florian DAVID on 30/11/2023.
 //
@@ -24,17 +24,6 @@ class PlaceViewModel: ObservableObject {
         do {
             let places = try await service.fetchAllPlaces()
             state = .success(data: places)
-        } catch {
-            state = .error(error: error)
-            print(error)
-        }
-    }
-    
-    func getPlaceWithUsers(id_place: Int) async {
-        state = .loading
-        do {
-            let place = try await service.fetchPlaceWithUsers(id: id_place)
-            state = .success(data: place)
         } catch {
             state = .error(error: error)
             print(error)
