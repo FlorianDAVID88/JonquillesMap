@@ -1,6 +1,6 @@
 //
 //  User.swift
-//  MingleMap
+//  JonquillesMap
 //
 //  Created by Florian DAVID on 04/12/2023.
 //
@@ -22,10 +22,10 @@ struct User: Codable {
     }
     
     enum CodingKeys: String, CodingKey {
-        case id = "id_user"
-        case username = "name_user"
-        case avatarURL = "avatar_url"
-        case phone = "phone_number"
-        case email = "email"
+        case id
+        case username = "pseudo"
+        case avatarURL = "avatarimg"
+        case phone
+        case email = "mail"
     }
 }
