@@ -1,6 +1,6 @@
 //
 //  MapView.swift
-//  MingleMap
+//  JonquillesMap
 //
 //  Created by Florian DAVID on 30/11/2023.
 //
