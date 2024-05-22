@@ -1,5 +1,6 @@
 # JonquillesMap
 Application iOS sur l'idée de la fête des jonquilles à Gérardmer ([site officiel](https://www.fete-des-jonquilles-gerardmer-officiel.fr/))
+*Projet créé pour la 3ème année de BUT Informatique*
 
 ## Pré-requis
 - <img src="https://developer.apple.com/assets/elements/icons/xcode-12/xcode-12-96x96_2x.png" width="20" alt="" align="center"> Xcode 15.0.1 ou plus récent / <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/AppCode_Icon.png" height="20" alt="" align="center"> AppCode
